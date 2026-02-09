@@ -12,6 +12,10 @@ import java.time.LocalTime;
 public class AgendamentoRequestDTO {
     private String nome;
 
+    private String numeroCliente;
+
+    private Double valorPix;
+
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate data;
 

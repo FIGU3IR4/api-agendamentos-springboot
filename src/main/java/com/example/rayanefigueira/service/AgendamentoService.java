@@ -49,4 +49,12 @@ public class AgendamentoService {
         agendamento.setStatus(StatusAgendamento.CANCELADO);
         agendamentoRepository.save(agendamento);
     }
+
+    public  void deletar(Long id){
+        agendamentoRepository.deleteById(id);
+    }
+
+
+
+
 }

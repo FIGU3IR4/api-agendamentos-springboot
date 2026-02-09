@@ -23,10 +23,17 @@ public class Agendamento {
 
     private String nome;
 
-    @JsonFormat(pattern = "yyyy-MM-dd") // Ensina o Java a ler o que o React envia
+    private String numeroCliente;
+
+    private Double valorPix;
+
+
+
+
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate data;
 
-    @JsonFormat(pattern = "HH:mm") // Ensina o Java a ler horários como "08:00"
+    @JsonFormat(pattern = "HH:mm")
     private LocalTime horario;
 
     private String servico;
